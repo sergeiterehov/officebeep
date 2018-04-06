@@ -32,3 +32,5 @@ else
     echo "Process already started!"
     stop 0
 fi
+
+stop 0

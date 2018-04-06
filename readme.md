@@ -15,9 +15,9 @@ Shake yourself
 push me
 ```
 
-Add colleagues' computers that have the package installed in the file ```config/people.sh```
+Add the addresses of your colleagues' computers
 ```bash
-alex="192.168.1.123"
+push add alex 192.168.1.23
 ```
 
 Shake Alex (from example)
