@@ -6,13 +6,13 @@ function stop {
 local=$(pwd)
 cd $dir
 
-pid=$( ps a | grep "nc" | grep "4444" | sed -r "s/([0-9]*).*/\1/" )
+pid=$( ps ax | grep "nc" | grep "4444" | sed -r "s/\s?([0-9]*).*/\1/" )
 
 if [[ $pid = '' ]]
 then
     if [[ $1 = '' ]]
     then
-        eval "bash ./pop.sh &"
+        eval "bash ./pop.sh --officebeep &"
 
         echo "Process is started."
         stop 0
