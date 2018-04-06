@@ -1,11 +1,9 @@
 function beep {
-    aplay "${soundFile}"
+    aplay "${soundFile}" > /dev/null 2>&1
 }
 
 function query {
     msg=$1
-
-    echo "[$msg]"
 
     if [[ $1 = $code ]]
     then
