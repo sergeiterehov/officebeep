@@ -12,3 +12,4 @@ function query {
 }
 
 nc -lk 4444 | while read -r line; do query "$line"; done
+echo "Office beep is stopped."
