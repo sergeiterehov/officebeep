@@ -24,3 +24,8 @@ Shake Alex (from example)
 ```bash
 push alex
 ```
+
+Stop the program
+```bash
+pop out
+```
