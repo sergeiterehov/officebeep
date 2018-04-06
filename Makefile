@@ -14,3 +14,4 @@ install:
 	echo "#!/bin/bash" | sudo tee /usr/local/bin/pop
 	echo "dir=\"${dir}\"" | sudo tee --append /usr/local/bin/pop
 	cat ./src/pop.sh | sudo tee --append /usr/local/bin/pop
+	sudo iptables -A INPUT -p tcp -m tcp --dport 4444 -m conntrack --ctstate NEW -j ACCEPT
